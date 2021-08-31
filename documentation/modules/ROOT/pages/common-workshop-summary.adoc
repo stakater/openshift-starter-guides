@@ -1,7 +1,7 @@
 = Overview
 :navtitle: Overview
 
-This workshop is intended to give you a hands on introduction to using OpenShift from the perspective of a developer.
+This workshop is intended to give you a hands on introduction to using Stakater App Agility Platform (Managed OpenShift) from the perspective of a developer.
 
 Topics which this workshop will cover include:
 
