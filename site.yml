@@ -3,12 +3,12 @@ runtime:
 
 site:
   title: OpenShift Starter Guides
-  url: http://redhat-scholars.github.io/openshift-starter-guides/
+  url: http://stakater.github.io/openshift-starter-guides/
   start_page: rhs-openshift-starter-guides::index.adoc
 
 content:
   sources:
-    - url: git@github.com:redhat-scholars/openshift-starter-guides.git
+    - url: git@github.com:stakater/openshift-starter-guides.git
       tags: []
       branches: [ocp-4.6, ocp-4.7]
       start_path: documentation
