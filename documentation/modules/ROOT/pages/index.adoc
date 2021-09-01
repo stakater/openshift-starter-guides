@@ -1,4 +1,4 @@
-= Welcome to OpenShift Starter Guides
+= Welcome to Stakater App Agility Platform Guides
 :!sectids:
 ifndef::lab[]
 :lab-name: Java
