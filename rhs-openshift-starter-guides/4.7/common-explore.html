@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Explore OpenShift :: OpenShift Starter Guides</title>
-    <link rel="canonical" href="http://redhat-scholars.github.io/openshift-starter-guides/rhs-openshift-starter-guides/4.7/common-explore.html">
+    <link rel="canonical" href="http://stakater.github.io/openshift-starter-guides/rhs-openshift-starter-guides/4.7/common-explore.html">
     <link rel="prev" href="common-environment.html">
     <link rel="next" href="prerequisites.html">
     <meta name="generator" content="Antora 2.3.4">
@@ -18,7 +18,7 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="https://developers.redhat.com" target="_blank"><img
           src="../../_/img/header_logo.png" height="40px" alt="Red Hat Developer Program"></a>
-      <a class="navbar-item" style="font-size: 24px; color: white" href="http://redhat-scholars.github.io/openshift-starter-guides">OpenShift Starter Guides</a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="http://stakater.github.io/openshift-starter-guides">OpenShift Starter Guides</a>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -428,7 +428,7 @@
     <a class="version" href="../4.6/common-explore.html">4.6</a>
   </div>
 </div>
-  <div class="edit-this-page"><a href="https://github.com/redhat-scholars/openshift-starter-guides/edit/ocp-4.7/documentation/modules/ROOT/pages/common-explore.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/stakater/openshift-starter-guides/edit/ocp-4.7/documentation/modules/ROOT/pages/common-explore.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <article class="doc">
@@ -444,74 +444,17 @@ perform various tasks via a browser.</p>
 <div class="ulist tabs">
 <ul>
 <li>
-<p><a id="tabset1_roks"></a>ROKS</p>
-</li>
-<li>
-<p><a id="tabset1_rosa"></a>ROSA</p>
-</li>
-<li>
-<p><a id="tabset1_aro"></a>ARO</p>
-</li>
-<li>
-<p><a id="tabset1_sandbox"></a>Sandbox</p>
-</li>
-<li>
-<p><a id="tabset1_others"></a>Others</p>
+<p><a id="tabset1_saap"></a>SAAP</p>
 </li>
 </ul>
 </div>
 <div class="content">
-<div class="tab-pane" aria-labelledby="tabset1_roks">
-<div class="paragraph">
-<p>Login to IBM Cloud, copy this link and open in your browser:</p>
-</div>
-<div class="listingblock copypaste">
-<div class="content">
-<pre class="highlightjs highlight"><code>%LOGIN%</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Enter following credentials:</p>
-</div>
-<div class="paragraph">
-<p><strong>Username</strong>:</p>
-</div>
-<div class="listingblock copypaste">
-<div class="content">
-<pre class="highlightjs highlight"><code>%USERNAME%</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Password</strong>:</p>
-</div>
-<div class="listingblock copypaste">
-<div class="content">
-<pre class="highlightjs highlight"><code>%PASSWORD%</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Click <strong>Sign In</strong>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/roks-login1.png" alt="ROKS Login">
-</div>
-</div>
-<div class="paragraph">
-<p>After you successfully logged in, from right side pane, click <strong>OpenShift web console</strong> to access your OpenShift Cluster Dashboard:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/roks-login4.png" alt="ROKS Open-shift web console">
-</div>
-</div>
-</div>
-<div class="tab-pane" aria-labelledby="tabset1_rosa">
+<div class="tab-pane" aria-labelledby="tabset1_saap">
 <div class="paragraph">
 <p>Access your cluster from <a href="https://console-openshift-console.%CLUSTER_SUBDOMAIN%" class="params-link" target="_blank" rel="noopener">OpenShift Web Console</a>.</p>
 </div>
 <div class="paragraph">
-<p>Login to your ROSA cluster using one of the available <a href="https://docs.openshift.com/rosa/rosa_getting_started/rosa-config-identity-providers.html" target="_blank" rel="noopener">Identity Provider</a>.</p>
+<p>Login to your SAAP cluster using one of the available options</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -538,195 +481,10 @@ perform various tasks via a browser.</p>
 </div>
 </div>
 </div>
-<div class="tab-pane" aria-labelledby="tabset1_aro">
-<div class="paragraph">
-<p>Access your cluster from <a href="https://console-openshift-console.%CLUSTER_SUBDOMAIN%" class="params-link" target="_blank" rel="noopener">OpenShift Web Console</a>.</p>
-</div>
-<div class="paragraph">
-<p>Login to your ARO cluster using one of the available <a href="https://docs.openshift.com/container-platform/4.7/authentication/understanding-identity-provider.html" target="_blank" rel="noopener">Identity Provider</a>.</p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="title">Azure Active Directory</div>
-<div class="paragraph">
-<p>If you configured <a href="https://docs.microsoft.com/en-us/azure/openshift/configure-azure-ad-ui" target="_blank" rel="noopener">Azure Active Directory (AAD)</a>, select this identity provider to login using Azure authentication.</p>
-</div>
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/explore-aro-login.png" alt="ARO Login">
 </div>
 </div>
 <div class="paragraph">
-<p>On the Identity Provider login screen, enter the your credentials:</p>
-</div>
-<div class="paragraph">
-<p><strong>Username</strong>:</p>
-</div>
-<div class="listingblock copypaste">
-<div class="content">
-<pre class="highlightjs highlight"><code>%USERNAME%</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Password</strong>:</p>
-</div>
-<div class="listingblock copypaste">
-<div class="content">
-<pre class="highlightjs highlight"><code>%PASSWORD%</code></pre>
-</div>
-</div>
-</div>
-<div class="tab-pane" aria-labelledby="tabset1_sandbox">
-<div class="paragraph">
-<p><a href="https://developers.redhat.com/developer-sandbox" target="_blank" rel="noopener">Developer Sandbox for Red Hat OpenShift</a> is a free Kubernetes cloud environment in a shared, multi-tenant OpenShift cluster that is pre-configured with a set of developer tools. The Developer Sandbox is active for 30 days and renewable once it expires.</p>
-</div>
-<div class="paragraph">
-<p>To create your account, register to <a href="https://developers.redhat.com/developer-sandbox" target="_blank" rel="noopener">Developer Sandbox for Red Hat OpenShift</a>. From there, click on the red button that says <strong>Get Started in the Sandbox</strong> as shown in the following image.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/devsandbox-signup.png" alt="Developer Sandbox Sign-up Page">
-</div>
-</div>
-<div class="paragraph">
-<p>Use your existing Red Hat account or create a new one, then follow the instructions on the screen. You should then be redirected to the Developer Sandbox page again, but this time, you should see a button labelled <strong>Start using your sandbox</strong>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/devsandbox-start.png" alt="Developer Sandbox Start Page">
-</div>
-</div>
-<div class="paragraph">
-<p>Clicking on it opens up the OpenShift login screen where you can log in using the <strong>DevSandbox</strong> button, as seen below.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/devsandbox-login.png" alt="Log in the Developer Sandbox">
-</div>
-</div>
-<div class="paragraph">
-<p>Clicking this button opens up your new OpenShift cluster console.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/devsandbox-topology-view.png" alt="Topology View">
-</div>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="title">Quotas and Limits</div>
-<div class="paragraph">
-<p>Your private OpenShift environment on Developer Sandbox includes quotas and limits of:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>7 GB RAM</p>
-</li>
-<li>
-<p>15GB storage</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>which is enough to run this workshop.</p>
-</div>
-<div class="paragraph">
-<p>There are two fixed projects (namespaces):</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>&lt;your_username&gt;-dev</code></p>
-</li>
-<li>
-<p><code>&lt;your_username&gt;-stage</code></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>In this shared environment, it&#8217;s <strong>NOT</strong> possible to create a new project as in <a href="projects.html#create_your_first_project" class="page params-link" target="_blank" rel="noopener">Create your First Project</a>. This environment doesn&#8217;t support Pipelines Operator, so you can skip the <a href="prerequisites.html#openshift_pipelines" class="page params-link" target="_blank" rel="noopener">OpenShift Pipelines</a> prerequisite.</p>
-</div>
-<div class="paragraph">
-<p>Please work in the <code>&lt;your_username&gt;-dev</code> project.</p>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>To continue working with the Lab, please do the following:</p>
-</div>
-<div class="paragraph">
-<p>1 - Copy your cluster subdomain as shown in the image above, part <strong>1</strong> e.g. <code>apps.sandbox-m2.ll9k.p1.openshiftapps.com</code>. This is used to generate automatically all URLs during the workshop.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/devsandbox-topology.png" alt="Topology Detail">
-</div>
-</div>
-<div class="paragraph">
-<p>Go to the top menu of this Lab guide, and paste the copied hostname into the first textfield, where there is <strong>Enter Cluster Subdomain</strong>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/devsandbox-form1.png" alt="Add Cluster Subdomain">
-</div>
-</div>
-<div class="paragraph">
-<p>Press <strong>Enter</strong> to Submit.</p>
-</div>
-<div class="paragraph">
-<p>2 - Copy the project name of your Developer Sandbox as shown in the image above, part <strong>2</strong> e.g. <code>user-dev</code>. This is also used to generate automatically all URLs and instructions during the workshop.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/devsandbox-form2.png" alt="Add Project Name">
-</div>
-</div>
-<div class="paragraph">
-<p>Go to the top menu of this Lab guide, and paste the copied project name into the second textfield, where there is <strong>Enter Project Name</strong>.</p>
-</div>
-<div class="paragraph">
-<p>Press <strong>Enter</strong> to Submit.</p>
-</div>
-<div class="paragraph">
-<p>Your Lab Guide is now customized with your Developer Sandbox environment hostname and settings:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/devsandbox-forms_ok.png" alt="Lab Guide OK">
-</div>
-</div>
-</div>
-<div class="tab-pane" aria-labelledby="tabset1_others">
-<div class="paragraph">
-<p>To get a feel for how the web console works, click on this <a href="https://console-openshift-console.%CLUSTER_SUBDOMAIN%" class="params-link" target="_blank" rel="noopener">Web Console</a> link.</p>
-</div>
-<div class="paragraph">
-<p>On the login screen, enter the following credentials:</p>
-</div>
-<div class="paragraph">
-<p><strong>Username</strong>:</p>
-</div>
-<div class="listingblock copypaste">
-<div class="content">
-<pre class="highlightjs highlight"><code>%USERNAME%</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Password</strong>:</p>
-</div>
-<div class="listingblock copypaste">
-<div class="content">
-<pre class="highlightjs highlight"><code>%PASSWORD%</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>In general, the first time you access the web console, you will most likely be in the Administrator perspective. In case you are also the Cluster Administrator, you will be presented with an overview of the whole Cluster status:</p>
+<p>The first time you access the web console, you will most likely be in the Administrator perspective. If you are also the Cluster Administrator, you will be presented with an overview of the whole Cluster status:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -797,10 +555,10 @@ Kubernetes Version: v1.20.0+bd9e442</code></pre>
 <p><a id="tabset2_mac-osx"></a>Mac OSX</p>
 </li>
 <li>
-<p><a id="tabset2_windows"></a>Windows</p>
+<p><a id="tabset2_linux"></a>Linux</p>
 </li>
 <li>
-<p><a id="tabset2_linux"></a>Linux</p>
+<p><a id="tabset2_windows"></a>Windows</p>
 </li>
 </ul>
 </div>
@@ -938,56 +696,6 @@ out by printing the version of the <code>oc</code> command:</p>
 still cannot get the <code>oc</code> command to work, contact your lab instructor for assistence.</p>
 </div>
 </div>
-<div class="tab-pane" aria-labelledby="tabset2_windows">
-<div class="paragraph">
-<p>From top right menu bar, click to the little white question mark icon, then click to <strong>Command Line Tools</strong>:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/prerequisites_cli_links.png" alt="Download CLI">
-</div>
-</div>
-<div class="paragraph">
-<p>Scroll down to <code>oc - OpenShift Command Line Interface (CLI)</code> and click on the link appropriate to your OS</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/prerequisites_cli_binaries.png" alt="CLI Binaries">
-</div>
-</div>
-<div class="paragraph">
-<p>The CLI for Windows is provided as a zip archive. Download and unzip the archive with a ZIP program and move the oc binary to a directory on your PATH. To check your PATH, open the Command Prompt and run:</p>
-</div>
-<div class="listingblock console-input">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">path</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Checkout this blog post if you&#8217;d like to set it up with <a href="https://www.openshift.com/blog/installing-oc-tools-windows" target="_blank" rel="noopener">Powershell</a></p>
-</div>
-<div class="paragraph">
-<p>At this point, we should have the oc tool available for use. Let&#8217;s test this
-out by printing the version of the <code>oc</code> command:</p>
-</div>
-<div class="listingblock console-input">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">oc version</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You should see the following (or something similar):</p>
-</div>
-<div class="listingblock console-output">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">Client Version: 4.7.0</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If you get an error message, you may not have not updated your path correctly. If after checking your <code>PATH</code> you
-still cannot get the <code>oc</code> command to work, contact your lab instructor for assistence.</p>
-</div>
-</div>
 <div class="tab-pane" aria-labelledby="tabset2_linux">
 <div class="paragraph">
 <p>From top right menu bar, click to the little white question mark icon, then click to <strong>Command Line Tools</strong>:</p>
@@ -1069,6 +777,56 @@ out by printing the version of the <code>oc</code> command:</p>
 still cannot get the <code>oc</code> command to work, contact your lab instructor for assistence.</p>
 </div>
 </div>
+<div class="tab-pane" aria-labelledby="tabset2_windows">
+<div class="paragraph">
+<p>From top right menu bar, click to the little white question mark icon, then click to <strong>Command Line Tools</strong>:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/prerequisites_cli_links.png" alt="Download CLI">
+</div>
+</div>
+<div class="paragraph">
+<p>Scroll down to <code>oc - OpenShift Command Line Interface (CLI)</code> and click on the link appropriate to your OS</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/prerequisites_cli_binaries.png" alt="CLI Binaries">
+</div>
+</div>
+<div class="paragraph">
+<p>The CLI for Windows is provided as a zip archive. Download and unzip the archive with a ZIP program and move the oc binary to a directory on your PATH. To check your PATH, open the Command Prompt and run:</p>
+</div>
+<div class="listingblock console-input">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">path</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Checkout this blog post if you&#8217;d like to set it up with <a href="https://www.openshift.com/blog/installing-oc-tools-windows" target="_blank" rel="noopener">Powershell</a></p>
+</div>
+<div class="paragraph">
+<p>At this point, we should have the oc tool available for use. Let&#8217;s test this
+out by printing the version of the <code>oc</code> command:</p>
+</div>
+<div class="listingblock console-input">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">oc version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should see the following (or something similar):</p>
+</div>
+<div class="listingblock console-output">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">Client Version: 4.7.0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you get an error message, you may not have not updated your path correctly. If after checking your <code>PATH</code> you
+still cannot get the <code>oc</code> command to work, contact your lab instructor for assistence.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1117,15 +875,35 @@ some additional environment variables for the oc command line to work.  Select t
 <p><a id="tabset3_mac-os-x"></a>Mac OS X</p>
 </li>
 <li>
-<p><a id="tabset3_windows"></a>Windows</p>
+<p><a id="tabset3_linux"></a>Linux</p>
 </li>
 <li>
-<p><a id="tabset3_linux"></a>Linux</p>
+<p><a id="tabset3_windows"></a>Windows</p>
 </li>
 </ul>
 </div>
 <div class="content">
 <div class="tab-pane" aria-labelledby="tabset3_mac-os-x">
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Replace the proxy server with the one for your environment/machine.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock console-input">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">export https_proxy=http://proxy-server.mycorp.com:3128/
+export HTTPS_PROXY=http://proxy-server.mycorp.com:3128/</code></pre>
+</div>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset3_linux">
 <div class="admonitionblock caution">
 <table>
 <tr>
@@ -1166,26 +944,6 @@ Replace the proxy server with the one for your environment/machine.
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">https_proxy=http://proxy-server.mycorp.com:3128/
 HTTPS_PROXY=http://proxy-server.mycorp.com:3128/</code></pre>
-</div>
-</div>
-</div>
-<div class="tab-pane" aria-labelledby="tabset3_linux">
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-Replace the proxy server with the one for your environment/machine.
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock console-input">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">export https_proxy=http://proxy-server.mycorp.com:3128/
-export HTTPS_PROXY=http://proxy-server.mycorp.com:3128/</code></pre>
 </div>
 </div>
 </div>
