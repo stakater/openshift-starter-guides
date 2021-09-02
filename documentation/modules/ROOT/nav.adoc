@@ -32,6 +32,7 @@
 ** xref:parksmap-logging.adoc#container_logs[Background: Container Logs]
 ** xref:parksmap-logging.adoc#examining_logs[Examining Logs]
 * xref:parksmap-permissions.adoc[Permissions]
+** xref:parksmap-permissions.adoc#background_permissions[Background: Permissions]
 ** xref:parksmap-permissions.adoc#grant_serviceaccount_view_permissions[Exercise: Grant Service Account View Permissions]
 ** xref:parksmap-permissions.adoc#redeploy_application[Exercise: Redeploy Application]
 * xref:parksmap-rsh.adoc[Connecting to a Container]
